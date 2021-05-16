@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Starbucks Landing Page</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section>
+            <div class="circle"></div>
+            <header>
+                <a href="#" ><img class="logo" src="pictures/logo.png"></a>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">What's New</a></li>
+                    <li><a href="#">Contact</a></li>
+
+                </ul>
+            </header>
+            <div class="content">
+                <div class="textbox">
+                    <h2>It's not a coffee<br>It's <span>Starbucks</span></h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui consectetur amet sed facere ullam eos inventore facilis quidem, repellendus hic a consequuntur ratione iure dolorum et laborum illo dolorem nemo.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div class="imgBox">
+                    <img src="pictures/img1.png" class="starbucks">
+                </div>
+                <div>
+                    <ul class="thumb">
+                        <li><img src="pictures/thumb1.png" onclick="imgSlider('pictures/img1.png'); colorChange('#017143')"></li>
+                        <li><img src="pictures/thumb2.png" onclick="imgSlider('pictures/img2.png'); colorChange('#eb7395')"></li>
+                        <li><img src="pictures/thumb3.png" onclick="imgSlider('pictures/img3.png'); colorChange('#d752b1')"></li>
+
+                    </ul>
+                </div>
+
+                <div>
+                    <ul class="sci">
+                        <li><a href="#"><img src="pictures/facebook.png"></a></li>
+                        <li><a href="#"><img src="pictures/instagram.png"></a></li>
+                        <li><a href="#"><img src="pictures/twitter.png"></a></li>
+
+                    </ul>
+                </div>
+
+            </div>
+            
+        </section>
+        <script type="text/javascript">
+            function imgSlider(anything){
+                document.querySelector(".starbucks").src= anything
+            }
+
+            function colorChange(color){
+                document.querySelector(".circle").style.background=color
+            }
+        </script>
+    </body>
+    
+</html>
